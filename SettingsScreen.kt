@@ -25,7 +25,9 @@ fun SettingsScreen(navController: NavController) {
         }
     }
 }
-
+Button(onClick = { navController.navigate("household") }) {
+    Text("Gospodarstwo domowe")
+}
 fun updateLocale(language: String) {
     val locale = Locale(language)
     Locale.setDefault(locale)
